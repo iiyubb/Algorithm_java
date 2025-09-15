@@ -20,8 +20,7 @@ public class Main
 		int i = 0;
 		while(!queue.isEmpty()) {
 		    i = (i + k - 1) % queue.size();
-		    sb.append(queue.get(i));
-		    queue.remove(i);
+		    sb.append(queue.remove(i));
 		    
 		    if (!queue.isEmpty()) {
 		        sb.append(", ");
